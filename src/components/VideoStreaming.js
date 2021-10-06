@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import {
-    BrowserView,
-    MobileView
+  BrowserView,
+  MobileView
 } from "react-device-detect";
 import ReactPlayer from 'react-player';
 
@@ -81,13 +81,13 @@ function VideoStreaming() {
             <div id="playButton" onClick={playPause} style={{ justifyContent: 'center'}}></div>
             <BrowserView>
                 <ReactPlayer 
-                    url='https://www.youtube.com/embed/1miPERr029E'
+                    url='https://youtu.be/rUFJZpvV0rs'
                     onEnded={()=>{setVideoEnd(true); console.log("ENDED")}}
                 />
             </BrowserView>
             <MobileView>
                 <ReactPlayer 
-                        url='https://www.youtube.com/embed/1miPERr029E'
+                        url='https://youtu.be/rUFJZpvV0rs'
                         width='560'
                         height='315'
                         onEnded={()=>{setVideoEnd(true); console.log("ENDED")}}
